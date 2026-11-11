@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "leadfndr": {
+      "type": "http",
+      "url": "https://api.leadfndr.com/api/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer ${LEADFNDR_API_KEY}"
+      }
+    }
+  }
+}
