@@ -10,7 +10,12 @@ This plugin connects an AI assistant to your Lead Fndr account over the official
 
 ## Install
 
-1. Install the **Lead Fndr** plugin.
+1. Install the **Lead Fndr** plugin. In Claude Code, run:
+
+   ```
+   /plugin install leadfndr --marketplace Lead-Fndr/leadfndr-plugin
+   ```
+
 2. Create an **Assistant key** in Lead Fndr: open **Integrations → API & Assistant** (`/settings/integration/api`). Start with the **Read** scope.
 3. When prompted, paste the key into the **Lead Fndr Assistant key** field. The plugin sends it as `Authorization: Bearer <key>`. The key is never stored in the plugin package.
 

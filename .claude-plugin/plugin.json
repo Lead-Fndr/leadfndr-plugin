@@ -1,0 +1,31 @@
+{
+  "name": "leadfndr",
+  "version": "1.0.0",
+  "description": "AI-powered prospecting for your Lead Fndr account. Find the right people, enrich leads, run AI agents, generate outreach, and send contacts to your CRM, through an assistant connection.",
+  "author": {
+    "name": "Lead Fndr",
+    "email": "support@agencyownersupport.com"
+  },
+  "homepage": "https://leadfndr.com",
+  "repository": "https://github.com/Lead-Fndr/leadfndr-plugin",
+  "license": "MIT",
+  "keywords": ["leadfndr", "leads", "prospecting", "enrichment", "ai-agents", "outreach", "crm", "mcp"],
+  "userConfig": {
+    "LEADFNDR_API_KEY": {
+      "type": "string",
+      "title": "Lead Fndr Assistant key",
+      "description": "An Assistant key from Lead Fndr: Integrations, then API & Assistant. Start with the Read scope. It is sent as Authorization: Bearer and stored in your secure credential store, never in the plugin.",
+      "required": true,
+      "sensitive": true
+    }
+  },
+  "mcpServers": {
+    "leadfndr": {
+      "type": "http",
+      "url": "https://api.leadfndr.com/api/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.LEADFNDR_API_KEY}"
+      }
+    }
+  }
+}

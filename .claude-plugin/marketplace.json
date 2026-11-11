@@ -1,0 +1,22 @@
+{
+  "name": "leadfndr",
+  "owner": {
+    "name": "Lead Fndr",
+    "email": "support@agencyownersupport.com"
+  },
+  "metadata": {
+    "description": "The official Lead Fndr plugin for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "leadfndr",
+      "source": "./",
+      "description": "Find, enrich and send leads from Claude with your Lead Fndr account.",
+      "version": "1.0.0",
+      "author": { "name": "Lead Fndr", "email": "support@agencyownersupport.com" },
+      "homepage": "https://leadfndr.com",
+      "license": "MIT",
+      "category": "productivity"
+    }
+  ]
+}
